@@ -1,42 +1,88 @@
 .top-container{
     background-color: #E4F9F5;
-    position: relative;
+    /* position: relative; */
     padding-top: 100px;
-    font-size: 2em;
+    /* font-size: font-size:5vw; */
 }
 
-h1{
-    margin: 50px auto 0 auto;
-    font-family: "Zen Loop", sans-serif;
-    font-size: 5.625rem;
-    color: #66BFBF;
 
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  h1{
+      margin: auto;
+      font-family: "Zen Loop", sans-serif;
+      font-size: 5vw;
+  /*
+      font-size: 5.625rem; */
+      color: #66BFBF;
+    }
+    h2{
+        font-family: "Zen Loop", sans-serif;
+        /* font-size: 2.5rem; */
+        font-size: 2.5vw;
+        color: #66BFBF;
+        font: normal;
+
+    }
+  h3{
+      font-family: "Montserrat", sans-serif;
+      color: #11999E;
+      font-size: 1.25vw;
+  }
+  body{
+      margin: auto;
+      text-align: center;
+      font-family: "Merriweather Sans", sans-serif;
+      font-size: 1vw;
+  }
 }
-h2{
-    font-family: "Zen Loop", sans-serif;
-    font-size: 2.5rem;
-    color: #66BFBF;
-    font: normal;
-    
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1{
+      margin: auto;
+      font-family: "Zen Loop", sans-serif;
+      font-size: 16px;
+  /*
+      font-size: 5.625rem; */
+      color: #66BFBF;
+    }
+    h2{
+        font-family: "Zen Loop", sans-serif;
+        /* font-size: 2.5rem; */
+        font-size: 10px;
+        color: #66BFBF;
+        font: normal;
+
+    }
+  h3{
+      font-family: "Montserrat", sans-serif;
+      color: #11999E;
+      font-size: 8px;
+  }
+  body{
+      margin: auto;
+      text-align: center;
+      font-family: "Merriweather Sans", sans-serif;
+      font-size: 6px;
+  }
 }
-h3{
-    font-family: "Montserrat", sans-serif;
-    color: #11999E;
-}
-body{
-    margin: 0;
-    text-align: center;
-    font-family: "Merriweather Sans", sans-serif;
-}
+
+
 .top_cloud{
-    position: absolute;
-    right: 300px;
-    top: 50px;
+    position: relative;
+    width:calc(15vw);
+    max-width: 150px;
+    /* min-width: 60px; */
+    right: 18%;
+    top: 10%;
 }
 .bottom_cloud{
-    position: absolute;
-    left: 300px;
-    bottom: 300px;
+  width:calc(15vw);
+  max-width: 150px;
+  position: relative;
+  left: 18%;
+  top: 20%;
 }
 
 .pro{
@@ -52,12 +98,19 @@ body{
 
 .skill-img{
     float: left;
-    margin-right: 30px;
+    width:calc(6vw);
+    max-width: 128px;
+    min-width: 20px;
+    margin-right: 16px;
+
 }
 
 .skill-img2{
     float: right;
-    margin-left: 30px;
+    width:calc(6vw);
+    max-width: 128px;
+    min-width: 20px;
+    margin-left: 16px;
 }
 
 
@@ -65,7 +118,8 @@ hr {
     border-width: 5px;
     border-color: grey;
     border-style: dotted none none;
-    width: 5%;
+    width: calc(10vw);
+    min-width: 100px
 }
 
 .btn {
@@ -93,7 +147,7 @@ hr {
     cursor: pointer;
     text-align: center;
  }
- 
+
  .btn:hover {
     border: solid #337FED 1px;
     background: #1E62D0;
@@ -107,9 +161,13 @@ hr {
     border-radius: 20px;
     text-decoration: none;
  }
+
 .bottom-container{
     background-color: #66BFBF;
-    padding:40px
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width:calc(100vw);
+    margin:auto;
 }
 
 .footer-link {
@@ -121,4 +179,27 @@ hr {
     color: #EAF6F6;
 }
 
+div {
+  width: calc(100vw);
+  margin: auto;
+}
 
+img {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.mountain {
+  width:calc(30vw);
+  max-width: 750px;
+  min-width: 100px;
+}
+
+img.self {
+  width:calc(15vw);
+  max-width: 190px;
+  min-width: 60px;
+}
